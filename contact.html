@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – SUDO Pakistan</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #0d2a54;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav img {
+      height: 100px;
+      border-radius: 35%;
+      object-fit: contain;
+      background-color: red;
+      padding: 6px;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0d2a54;
+      text-align: center;
+    }
+    .contact-info {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #d6001c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b10016;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About Us</a></li>
+        <li><a href='sudo-in-pakistan.html'>SUDO in Pakistan</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+        <li><a href='donation.html'>Donation & Sponsorship</a></li>
+        <img src="logo.png" alt="SUDO Pakistan Logo" />
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+
+    <div class="contact-info">
+      <p><strong>SUDO Pakistan / World SUDO Federation</strong></p>
+      <p>Address: Lahore, Pakistan</p>
+      <p>Email: <a href='mailto:info@worldsudo.com'>info@worldsudo.com</a></p>
+      <p>Phone: +92 300 4318826</p>
+    </div>
+
+    <form action="mailto:kss.paderborn@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SUDO Pakistan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
